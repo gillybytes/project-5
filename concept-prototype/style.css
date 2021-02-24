@@ -34,3 +34,17 @@ th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
+.navbar {
+  overflow: hidden;
+  background: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 20px 22px;
+  text-decoration: none;
+}
