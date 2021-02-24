@@ -5,6 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Activafy | Strength</title>
 	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript">
+	function sync_confirm(){
+		confirm("Clicking this button will send the workout as an event to your Google calendar / iCal / digital calendar.")
+	}
+	</script>
 </head>
 <body>
 	<div class="navbar">
@@ -83,7 +88,7 @@
 				<td>x</td>
 			</tr>
 		</table>
-		<a href="strength-edit.html"><button><h3>Edit</h3></button></a> <button><h3>Sync With Calendar</h3></button>
+		<a href="strength-edit.html"><button><h3>Edit</h3></button></a> <button onclick="sync_confirm()"><h3>Sync With Calendar</h3></button>
 	</div>
 </body>
 </html>
