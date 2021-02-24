@@ -1,8 +1,12 @@
+body {
+  font-family: sans-serif;
+}
+
 .section {
   text-align: center;
 }
 
-.section button {
+.template {
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 50px;
