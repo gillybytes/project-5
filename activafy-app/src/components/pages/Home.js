@@ -19,7 +19,7 @@ export const Home = () => {
     },
     {
       id: 2,
-      link: "/login",
+      link: "/",
       label: "Sign out"
     }
   ]

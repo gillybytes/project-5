@@ -13,7 +13,7 @@ export const Balance = () => {
     },
     {
       id: 2,
-      link: "/login",
+      link: "/s",
       label: "Sign out"
     }
   ]
