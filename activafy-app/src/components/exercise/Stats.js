@@ -1,5 +1,5 @@
 import { Menu } from '../layout/Menu'
-import { Container, Button} from 'react-bootstrap'
+import { Container, Row, Button} from 'react-bootstrap'
 
 
 export const Stats = () => {
@@ -18,9 +18,23 @@ export const Stats = () => {
   return (
     <>
       <Menu nav={nav} link='/home' />
-      <Container className="section">
-        <Button>Weekly</Button> {} <Button>Monthly</Button> {} <Button>Yearly</Button>
-      </Container>
+        <Container className="section">
+          <Row className="justify-content-center">
+            <h3>Daily Statistics</h3><br/>
+          </Row>
+          <Row className="justify-content-center">
+            <p>
+              User can view their daily, weekly, monthly, and yearly workout summary.
+            </p>
+          </Row>
+          <Row className="justify-content-center">
+            <p>
+              <Button>Weekly</Button> { } <Button>Monthly</Button> { } <Button>Yearly</Button>
+            </p>
+                          
+          </Row>
+          
+        </Container>
     </>
   )
 }
