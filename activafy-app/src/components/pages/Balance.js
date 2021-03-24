@@ -21,7 +21,7 @@ export const Balance = () => {
 
   return (
     <>
-      <Menu nav={nav} />
+      <Menu nav={nav} link='/home'/>
       <Container className="section">
         <Row className="justify-content-center">
           <Col className="text-center" md="auto">
