@@ -1,11 +1,20 @@
-import React from 'react';
+import { Menu } from '../../layout/Menu'
 import './style.css'
 
 export const Signup = () => {
+    const nav = [
+        {
+          id: 1,
+          link: "/",
+          label: "Login"
+        }
+      ]
   return(
-      <container className="section">
-          <h1>Activafy</h1>
-          <h2>Create your Activafy Account</h2>
+      <>
+        <Menu nav={nav} />
+          <container className="section">
+            <h1>Activafy</h1>
+            <h2>Create your Activafy Account</h2>
           <form>
               <label>
                   <p>First name<input type="text" /></p>
@@ -24,6 +33,7 @@ export const Signup = () => {
               </div>
           </form>
       </container>
+      </>
   )
 }
 

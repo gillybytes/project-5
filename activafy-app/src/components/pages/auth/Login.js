@@ -1,10 +1,17 @@
+import { Menu } from '../../layout/Menu'
 
-import './style.css'
 export const Login = () => {
-
+    const nav = [
+        {
+          id: 1,
+          link: "/signup",
+          label: "Signup"
+        }
+      ]
+    
     return(
         <>
-        
+        <Menu nav={nav} />
         <container className="section">
             <h1>Welcome to Activafy!</h1>
             <form>
