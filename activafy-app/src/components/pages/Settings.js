@@ -8,21 +8,16 @@ export const Settings = () => {
   const nav = [
     {
       id: 1,
-      link: "#dasbhoard",
+      link: "/home",
       label: "Dashboard"
     },
     {
       id: 2,
-      link: "Exercise",
-      label: "Settings"
-    },
-    {
-      id: 3,
       link: "/settings",
       label: "Settings"
     },
     {
-      id: 4,
+      id: 3,
       link: "/",
       label: "Sign out"
     }

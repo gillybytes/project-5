@@ -19,14 +19,8 @@ export const Home = () => {
     },
     {
       id: 2,
-
-      link: "/Sign out",
+      link: "/",
       label: "Sign out"
-    },
-    {
-      id: 3,
-      link: "/login",
-      label: "login"
     }
   ]
 
