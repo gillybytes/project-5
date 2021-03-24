@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css'
+
 export const Signup = () => {
   return(
       <container className="section">
@@ -8,16 +9,16 @@ export const Signup = () => {
           <form>
               <label>
                   <p>First name<input type="text" /></p>
-              </label>
+              </label><br />
               <label>
                   <p>Last name<input type="text" /></p>
-              </label>
+              </label><br />
               <label>
                   <p>Username<input type="text" /></p>
-              </label>
+              </label><br />
               <label>
                   <p>Password<input type="password" /></p>
-              </label>
+              </label><br />
               <div>
                   <button type="submit">Submit</button>
               </div>
