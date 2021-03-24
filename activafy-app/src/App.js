@@ -1,8 +1,10 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { Home } from './components/pages/Home'
+
+import { Home } from './components/pages/Home';
+import { Login} from './components/pages/auth/Login';
+import { Signup } from './components/pages/auth/Signup';
 import { Balance } from './components/pages/Balance'
 import { Settings } from './components/pages/Settings'
-
 
 const App = () => {
   return (
@@ -10,6 +12,8 @@ const App = () => {
       <div className="App">
         <Switch>
           <Route exact path='/' component={Home} />
+          <Route exact path='/signup' component={Signup} />
+          <Route exact path='/login' component={Login} />
           {/* <Route exact path='/login' component={Signup} />
           <Route exact path='/signup' component={Login} /> */}
           <Route exact path='/settings' component={Settings}/>
