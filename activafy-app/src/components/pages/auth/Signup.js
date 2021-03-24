@@ -12,26 +12,21 @@ export const Signup = () => {
   return(
       <>
         <Menu nav={nav} />
-          <container className="section">
-            <h2>Create your Account</h2>
+          
           <form>
-              <label>
-                  <p>First name<input type="text" /></p>
-              </label><br />
-              <label>
-                  <p>Last name<input type="text" /></p>
-              </label><br />
-              <label>
-                  <p>Username<input type="text" /></p>
-              </label><br />
-              <label>
-                  <p>Password<input type="password" /></p>
-              </label><br />
-              <div>
-                  <button type="submit">Submit</button>
-              </div>
+            <div className="container">
+                <label for="lname"><b>LastName</b></label>
+                <input type="text" placeholder="Enter your last name" name="lname" required />
+                <label for="fname"><b>FirstName</b></label>
+                <input type="text" placeholder="Enter your first name" name="fname" required />
+                <label for="uname"><b>UserName</b></label>
+                <input type="text" placeholder="Enter the user name" name="uname" required /> 
+                <label for="passw"><b>Password</b></label>
+                <input type="password" placeholder="Enter the password" name="passw" required />
+                <button type="submit">Submit</button>        
+            </div>
           </form>
-      </container>
+    
       </>
   )
 }
