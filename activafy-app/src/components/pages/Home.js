@@ -19,14 +19,8 @@ export const Home = () => {
     },
     {
       id: 2,
-
-      link: "/Sign out",
+      link: "/",
       label: "Sign out"
-    },
-    {
-      id: 3,
-      link: "/login",
-      label: "login"
     }
   ]
 
@@ -38,12 +32,15 @@ export const Home = () => {
         <Row className="justify-content-center">
           <Col className="text-center" md="auto">
             <h1>Welcome, [name]!</h1><br/>
-            <h2>INSERT WORKOUT SUMMARY HERE</h2><br/>
-            <h3>Choose a template:</h3>
-            <br />
+          </Col>
+        </Row>
+        <Row className="section">
+          <Col className="text-center" md="auto">
+          <h2>WORKOUT SUMMARY HERE</h2><br/>
           </Col>
         </Row>
         <Row className="justify-content-center">
+          <h3>Choose a template:</h3><br/>
           <Col md={12} className="text-center">
             <CardGroup>
               <IconTemplate pic={balance} title="Balance" path="/balance" />
