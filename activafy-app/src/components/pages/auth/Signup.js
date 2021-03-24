@@ -27,9 +27,10 @@ export const Signup = () => {
               <Form.Control type="password" placeholder="Password" />
             </Form.Group>
             <Button variant="primary" href="/home">
-              Submit
+              Sign up
             </Button>
           </Form>
+          <h3>Include sign up w/ social media and forgot password features</h3>
         </Container>
         
           
