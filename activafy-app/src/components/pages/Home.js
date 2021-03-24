@@ -36,6 +36,7 @@ export const Home = () => {
         <Row className="justify-content-center">
           <Col className="text-center" md="auto">
             <h1>Welcome, [name]!</h1><br/>
+            <h2>INSERT WORKOUT SUMMARY HERE</h2><br/>
             <h3>Choose a template:</h3>
             <br />
           </Col>
