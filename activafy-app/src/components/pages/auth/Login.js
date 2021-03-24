@@ -11,21 +11,20 @@ export const Login = () => {
     
     return(
         <>
-        <Menu nav={nav} link="/" />
-        <container className="section">
-            <h1>Welcome to Activafy!</h1>
-            <form>
-                <label>
-                    <p>Username<input type="text" /></p>
-                </label><br />
-                <label>
-                    <p>Password<input type="password" /></p>
-                </label><br />
-                <div>
-                    <button type="submit">Submit</button>
-                </div>
-            </form>
-        </container>
+        <Menu nav={nav} link="/login" />
+          <form>
+              <h1>Activafy</h1>
+              <div className="container">
+                  <label for="username"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="username" required />
+
+                  <label for="passw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="passw" required />
+                
+                  <button type="submit">Login</button>
+                 
+              </div>
+          </form>
         </>
     )
 }
