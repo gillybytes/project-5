@@ -13,8 +13,7 @@ export const Signup = () => {
       <>
         <Menu nav={nav} />
           <container className="section">
-            <h1>Activafy</h1>
-            <h2>Create your Activafy Account</h2>
+            <h2>Create your Account</h2>
           <form>
               <label>
                   <p>First name<input type="text" /></p>

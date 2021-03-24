@@ -5,13 +5,13 @@ export const Login = () => {
         {
           id: 1,
           link: "/signup",
-          label: "Signup"
+          label: "Sign up"
         }
       ]
     
     return(
         <>
-        <Menu nav={nav} />
+        <Menu nav={nav} link="/" />
         <container className="section">
             <h1>Welcome to Activafy!</h1>
             <form>
