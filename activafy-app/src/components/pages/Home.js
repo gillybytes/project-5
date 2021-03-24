@@ -38,10 +38,10 @@ export const Home = () => {
         <Row className="justify-content-center">
           <Col md={12} className="text-center">
             <CardGroup>
-              <IconTemplate pic={balance} title="Balance"/>
-              <IconTemplate pic={endurance} title="Endurance"/>
-              <IconTemplate pic={flexibility} title="Flexibility"/>
-              <IconTemplate pic={strength} title="Strength"/>
+              <IconTemplate pic={balance} title="Balance" path="/balance" />
+              <IconTemplate pic={endurance} title="Endurance" path="/endurance" />
+              <IconTemplate pic={flexibility} title="Flexibility" path="/flexibility" />
+              <IconTemplate pic={strength} title="Strength" path="/strength" />
             </CardGroup>          
           </Col>
         </Row>

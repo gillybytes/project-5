@@ -1,5 +1,6 @@
 import { Card, Button } from 'react-bootstrap'
 
+
 export const IconTemplate = (props) => {
   return (
     <>
@@ -8,7 +9,7 @@ export const IconTemplate = (props) => {
           <Card.Body>
             <Card.Title>{props.title}</Card.Title>
             <Card.Text>
-              <Button variant="primary">Select</Button>
+              <Button variant="primary" href={props.path}>Select</Button>
             </Card.Text>          
           </Card.Body>
       </Card>
