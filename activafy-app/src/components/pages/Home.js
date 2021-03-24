@@ -16,6 +16,11 @@ export const Home = () => {
       id: 2,
       link: "/logout",
       label: "Sign out"
+    },
+    {
+      id: 3,
+      link: "/login",
+      label: "Login"
     }
   ]
 
