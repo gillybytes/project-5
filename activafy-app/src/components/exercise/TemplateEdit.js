@@ -24,65 +24,65 @@ export const TemplateEdit = (props) => {
             <tr>
               <td>MONDAY</td>
               <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
             </tr>
             <tr>
               <td>TUESDAY</td>
               <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
             </tr>
             <tr>
               <td>WEDNESDAY</td>
               <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
             </tr>
             <tr>
               <td>THURSDAY</td>
               <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
             </tr>
             <tr>
               <td>FRIDAY</td>
               <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
             </tr>
             <tr>
               <td>SATURDAY</td>
               <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
             </tr>
             <tr>
               <td>SUNDAY</td>
               <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
-              <td><Form.Control type="text" placeholder="Exercise" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
+              <td><Form.Control type="number" placeholder="0" /></td>
             </tr>
           </tbody>
         </Table>
