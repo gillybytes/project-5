@@ -9,6 +9,7 @@ import flexibility from '../../img/flexibility.png'
 import strength from '../../img/strength.png'
 
 
+
 export const Home = () => {
   const nav = [
     {
