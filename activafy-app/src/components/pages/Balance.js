@@ -1,6 +1,6 @@
 import { Menu } from '../layout/Menu'
 import { Container, Row, Col } from 'react-bootstrap'
-
+import { Template } from '../exercise/Template'
 import '../../style/style.css'
 
 
@@ -25,7 +25,7 @@ export const Balance = () => {
       <Container className="section">
         <Row className="justify-content-center">
           <Col className="text-center" md="auto">
-            <h1>Exercise form here</h1>
+            <Template />
           </Col>
         </Row>
       </Container>
