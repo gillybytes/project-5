@@ -13,7 +13,7 @@ export const Settings = () => {
     },
     {
       id: 2,
-      link: "/login",
+      link: "/",
       label: "Sign out"
     }
   ]
@@ -21,11 +21,12 @@ export const Settings = () => {
 
   return (
     <>
-      <Menu nav={nav} />
+      <Menu nav={nav} link='/home' />
       <Container className="section">
         <Row className="justify-content-center">
           <Col className="text-center" md="auto">
-            <h1>Settings here</h1>
+            <h1>Settings here</h1><br/>
+            <h3>Add notifications enhancement</h3>
           </Col>
         </Row>
       </Container>

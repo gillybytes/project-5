@@ -19,15 +19,20 @@ export const Home = () => {
     },
     {
       id: 2,
-      link: "/login",
+      link: "/Sign out",
       label: "Sign out"
+    },
+    {
+      id: 3,
+      link: "/login",
+      label: "login"
     }
   ]
 
 
   return (
     <>
-      <Menu nav={nav} />
+      <Menu nav={nav} link='/home' />
       <Container className="section">
         <Row className="justify-content-center">
           <Col className="text-center" md="auto">

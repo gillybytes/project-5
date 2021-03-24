@@ -12,12 +12,12 @@ const NavLink = ({item}) => {
 }
 
 
-export const Menu = ({nav}) => {
+export const Menu = ({nav, link}) => {
   return (
     <>
       <Navbar fixed="top" collapseOnSelect expand="lg" bg="light">
         <Navbar.Brand>
-          <Nav.Link href="/"><FaRunning className="icon"/> Activafy</Nav.Link>
+          <Nav.Link href={link}><FaRunning className="icon"/> Activafy</Nav.Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

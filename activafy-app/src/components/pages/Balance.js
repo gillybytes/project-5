@@ -13,7 +13,7 @@ export const Balance = () => {
     },
     {
       id: 2,
-      link: "/login",
+      link: "/s",
       label: "Sign out"
     }
   ]
@@ -21,7 +21,7 @@ export const Balance = () => {
 
   return (
     <>
-      <Menu nav={nav} />
+      <Menu nav={nav} link='/home'/>
       <Container className="section">
         <Row className="justify-content-center">
           <Col className="text-center" md="auto">
