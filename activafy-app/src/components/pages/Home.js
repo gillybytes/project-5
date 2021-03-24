@@ -1,8 +1,12 @@
 import { Menu } from '../layout/Menu'
-import { Container, Row, Col } from 'react-bootstrap'
-import { Template } from '../exercise/Template'
+import { Container, Row, Col, CardGroup } from 'react-bootstrap'
+import { IconTemplate } from '../layout/IconTemplate'
 import '../../style/style.css'
 import '../../style/Home.css'
+import balance from '../../img/balance.png'
+import endurance from '../../img/endurance.png'
+import flexibility from '../../img/flexibility.png'
+import strength from '../../img/strength.png'
 
 
 export const Home = () => {
@@ -24,6 +28,7 @@ export const Home = () => {
     }
   ]
 
+
   return (
     <>
       <Menu nav={nav} />
@@ -33,12 +38,16 @@ export const Home = () => {
             <h1>Welcome, [name]!</h1><br/>
             <h3>Choose a template:</h3>
             <br />
-            <p>Enter Template components here</p>
           </Col>
         </Row>
         <Row className="justify-content-center">
-          <Col xs={6} md={3} className="text-center">
-            <Template />
+          <Col md={12} className="text-center">
+            <CardGroup>
+              <IconTemplate pic={balance} title="Balance" path="/balance" />
+              <IconTemplate pic={endurance} title="Endurance" path="/endurance" />
+              <IconTemplate pic={flexibility} title="Flexibility" path="/flexibility" />
+              <IconTemplate pic={strength} title="Strength" path="/strength" />
+            </CardGroup>          
           </Col>
         </Row>
       </Container>
