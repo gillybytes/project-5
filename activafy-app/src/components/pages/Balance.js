@@ -112,9 +112,9 @@ export const Balance = () => {
               <Button variant="primary" href="/balance-edit">Edit</Button> { }
               <Button variant="primary" onClick={handleShow}>Synchronize</Button>
             </p>
-              <Modal show={show} onHide={handleClose}>
+              <Modal size="lg" aria-labelledby="contained-modal-title-vcenter" centered show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                  <Modal.Title>Synchornize Balance Routine</Modal.Title>
+                  <Modal.Title>Synchronize Balance Routine</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>Proceed to sync this workout to your calendar?</Modal.Body>
                 <Modal.Footer>

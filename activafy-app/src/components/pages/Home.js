@@ -33,9 +33,9 @@ export const Home = () => {
             <h1>Welcome, [name]!</h1><br/>
           </Col>
         </Row>
-        <Row className="section">
+        <Row className="justify-content-center">
           <Col className="text-center" md="auto">
-          <h2>WORKOUT SUMMARY HERE</h2><br/>
+          <h2>Workout Summary:</h2><br/>
           </Col>
         </Row>
         <Row className="justify-content-center">
