@@ -1,14 +1,15 @@
-import { Card } from 'react-bootstrap'
-import pic from '../../img/balance.png'
+import { Card, Button } from 'react-bootstrap'
 
-export const Template = () => {
+export const Template = (props) => {
   return (
     <>
       <Card>
-        <Card.Img variant="top" src={pic} />
+        <Card.Img variant="top" src={props.pic} />
           <Card.Body>
-            <Card.Title>test</Card.Title>
-            <Card.Text>test</Card.Text>
+            <Card.Title>{props.title}</Card.Title>
+            <Card.Text>
+              <Button variant="primary">Select</Button>
+            </Card.Text>          
           </Card.Body>
       </Card>
     </>
