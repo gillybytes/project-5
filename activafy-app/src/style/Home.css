@@ -1,0 +1,14 @@
+/* Section */
+.section {
+  width: 100%;
+  padding: 5rem 0;
+}
+.section-emphasis h4 {
+  font-weight: 400;
+}
+
+/* Header */
+.header .logo {
+  max-width: 80%;
+  margin: 2.5rem 0;
+}

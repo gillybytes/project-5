@@ -1,0 +1,96 @@
+body,
+html {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+}
+h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #000;
+}
+h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #000;
+}
+h4 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #000;
+}
+h5 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+h6 {
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+p {
+  margin-bottom: 3rem;
+}
+a {
+  color: #f55f20;
+  font-weight: 400;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #000;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.btn {
+  background-color: #000;
+  color: #fff;
+  transition: all 0.3s;
+  -webkit-transition: 0.3s;
+  border: 0;
+}
+.btn:hover,
+.btn:focus,
+.btn.focus,
+.btn:active,
+.btn.active {
+  color: #fff;
+  background-color: #f55f20;
+}
+a:focus,
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+  outline-offset: none;
+}
+.btn-custom {
+  background-color: #000;
+  color: #fff;
+  padding: 0.85rem 2em;
+  letter-spacing: 0.1rem;
+  border-radius: 25px;
+  transition: all 0.3s;
+  -webkit-transition: 0.3s;
+  border: 0;
+  margin: 1rem 0;
+}
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom.focus,
+.btn-custom:active,
+.btn-custom.active {
+  color: #fff;
+  background-color: #f55f20;
+}

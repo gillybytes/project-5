@@ -1,4 +1,5 @@
 import { Nav, Navbar } from 'react-bootstrap'
+import { FaRunning } from "react-icons/fa";
 
 
 const NavLink = ({item}) => {
@@ -11,12 +12,12 @@ const NavLink = ({item}) => {
 }
 
 
-const Menu = ({nav}) => {
+export const MenuBar = ({nav}) => {
   return (
     <>
       <Navbar fixed="top" collapseOnSelect expand="lg" bg="light">
         <Navbar.Brand>
-          <Nav.Link href="/">Logo here</Nav.Link>
+          <Nav.Link href="/"><FaRunning className="icon"/></Nav.Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -29,5 +30,3 @@ const Menu = ({nav}) => {
     </>
   );
 }
-
-export default Menu

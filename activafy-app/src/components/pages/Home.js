@@ -1,25 +1,27 @@
-import Menu from '../layout/Menu'
+import { MenuBar } from '../layout/Menu'
 import { Container } from 'react-bootstrap'
+import '../../style/style.css'
+import '../../style/Home.css'
 
 
 export const Home = () => {
   const nav = [
     {
       id: 1,
-      link: "/login",
-      label: "Log in"
+      link: "/settings",
+      label: "Settings"
     },
     {
       id: 2,
-      link: "/signup",
-      label: "Sign up"
+      link: "/logout",
+      label: "Sign out"
     }
   ]
 
   return (
     <>
-      <Menu nav={nav} />
-      <Container className="dashboard">
+      <MenuBar nav={nav} />
+      <Container className="section">
         <h1>Dashboard will go here</h1>
       </Container>
     </>

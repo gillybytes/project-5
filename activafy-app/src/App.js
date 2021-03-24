@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Menu from './components/layout/Menu'
 import { Home } from './components/pages/Home';
-import './App.css'
+
 
 
 const App = () => {
