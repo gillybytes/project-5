@@ -11,7 +11,7 @@ export const Login = () => {
     
     return(
         <>
-        <Menu nav={nav} link="/login" />
+        <Menu nav={nav} link="/" />
           <form>
               <h1>Activafy</h1>
               <div className="container">

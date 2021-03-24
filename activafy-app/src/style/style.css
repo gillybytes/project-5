@@ -94,3 +94,11 @@ a:focus,
   color: #fff;
   background-color: #f55f20;
 }
+/* Section */
+.section {
+  width: 100%;
+  padding: 5rem 0;
+}
+.section-emphasis h4 {
+  font-weight: 400;
+}

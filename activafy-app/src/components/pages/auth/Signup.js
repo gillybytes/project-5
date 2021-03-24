@@ -1,31 +1,39 @@
 import { Menu } from '../../layout/Menu'
-import './style.css'
+import { Container, Form, Button } from 'react-bootstrap'
 
 export const Signup = () => {
     const nav = [
         {
           id: 1,
-          link: "/login",
+          link: "/",
           label: "Login"
         }
       ]
   return(
       <>
-        <Menu nav={nav} />
+        <Menu nav={nav} link='/'/>
+        <Container className="section">
+          <Form>
+            <Form.Group controlId="formBasicEmail">
+              <Form.Label>Email address</Form.Label>
+              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Text className="text-muted">
+                We'll never share your email with anyone else.
+              </Form.Text>
+            </Form.Group>
+
+            <Form.Group controlId="formBasicPassword">
+              <Form.Label>Password</Form.Label>
+              <Form.Control type="password" placeholder="Password" />
+            </Form.Group>
+            <Button variant="primary" href="/home">
+              Submit
+            </Button>
+          </Form>
+        </Container>
+        
           
-          <form>
-            <div className="container">
-                <label for="lname"><b>LastName</b></label>
-                <input type="text" placeholder="Enter your last name" name="lname" required />
-                <label for="fname"><b>FirstName</b></label>
-                <input type="text" placeholder="Enter your first name" name="fname" required />
-                <label for="uname"><b>UserName</b></label>
-                <input type="text" placeholder="Enter the user name" name="uname" required /> 
-                <label for="passw"><b>Password</b></label>
-                <input type="password" placeholder="Enter the password" name="passw" required />
-                <button type="submit">Submit</button>        
-            </div>
-          </form>
+
     
       </>
   )
