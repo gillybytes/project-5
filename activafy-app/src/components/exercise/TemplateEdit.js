@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import { Menu } from '../layout/Menu'
-import { Container, Row, Col, Button, Table, Form } from 'react-bootstrap'
+import { Button, Table, Form } from 'react-bootstrap'
 import '../../style/style.css'
 
 

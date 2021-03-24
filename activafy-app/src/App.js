@@ -6,6 +6,7 @@ import { Signup } from './components/pages/auth/Signup';
 import { Balance } from './components/pages/Balance';
 import { BalanceEdit } from './components/pages/Balance-edit'
 import { Settings } from './components/pages/Settings';
+import { Stats } from './components/exercise/Stats'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route exact path='/settings' component={Settings}/>
           <Route exact path='/balance' component={Balance} />
           <Route exact path='/balance-edit' component={BalanceEdit} />
+          <Route exact path='/stats' component={Stats}/>
         </Switch>
       </div>
     </Router>

@@ -4,7 +4,6 @@ import { Table } from 'react-bootstrap'
 export const Template = () => {
   return (
     <>
-      <h2> Routine</h2><br/>
       <Table striped bordered hover>
         <thead>
           <tr>
