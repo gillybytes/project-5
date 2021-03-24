@@ -1,4 +1,5 @@
 import { Menu } from '../../layout/Menu'
+import { Container, Form, Button } from 'react-bootstrap'
 
 export const Login = () => {
     const nav = [
@@ -12,19 +13,22 @@ export const Login = () => {
     return(
         <>
         <Menu nav={nav} link="/" />
-          <form>
-              <h1>Activafy</h1>
-              <div className="container">
-                  <label for="username"><b>Username</b></label>
-                  <input type="text" placeholder="Enter Username" name="username" required />
+        <Container className="section">
+          <Form>
+            <Form.Group controlId="fromBasicUsername">
+              <Form.Label>Username</Form.Label>
+              <Form.Control type="text" placeholder="Enter username" />
+            </Form.Group>
 
-                  <label for="passw"><b>Password</b></label>
-                  <input type="password" placeholder="Enter Password" name="passw" required />
-                
-                  <button type="submit">Login</button>
-                 
-              </div>
-          </form>
+            <Form.Group controlId="formBasicPassword">
+              <Form.Label>Password</Form.Label>
+              <Form.Control type="password" placeholder="Enter password" />
+            </Form.Group>
+            <Button variant="primary" href="/home">
+              Login
+            </Button>
+          </Form>
+        </Container>
         </>
     )
 }
