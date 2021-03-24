@@ -4,7 +4,7 @@ import { Table } from 'react-bootstrap'
 export const Template = () => {
   return (
     <>
-      <h2>Balance Routine</h2><br/>
+      <h2> Routine</h2><br/>
       <Table striped bordered hover>
         <thead>
           <tr>
@@ -83,9 +83,6 @@ export const Template = () => {
           </tr>
         </tbody>
       </Table>
-      <br/>
-      <h3>Add Save/Edit Button</h3>
-      <h3>Add Synchronize Button</h3>
     </>
   )
 }

@@ -8,11 +8,21 @@ export const Settings = () => {
   const nav = [
     {
       id: 1,
+      link: "#dasbhoard",
+      label: "Dashboard"
+    },
+    {
+      id: 2,
+      link: "Exercise",
+      label: "Settings"
+    },
+    {
+      id: 3,
       link: "/settings",
       label: "Settings"
     },
     {
-      id: 2,
+      id: 4,
       link: "/",
       label: "Sign out"
     }
@@ -25,8 +35,9 @@ export const Settings = () => {
       <Container className="section">
         <Row className="justify-content-center">
           <Col className="text-center" md="auto">
-            <h1>Settings here</h1><br/>
+            <h1>User Settings</h1><br/>
             <h3>Add notifications enhancement</h3>
+            <p>Use modal</p>
           </Col>
         </Row>
       </Container>
