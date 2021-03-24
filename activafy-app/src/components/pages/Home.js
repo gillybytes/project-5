@@ -1,4 +1,4 @@
-import { MenuBar } from '../layout/Menu'
+import { Menu } from '../layout/Menu'
 import { Container } from 'react-bootstrap'
 import '../../style/style.css'
 import '../../style/Home.css'
@@ -20,7 +20,7 @@ export const Home = () => {
 
   return (
     <>
-      <MenuBar nav={nav} />
+      <Menu nav={nav} />
       <Container className="section">
         <h1>Dashboard will go here</h1>
       </Container>
