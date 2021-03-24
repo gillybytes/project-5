@@ -1,6 +1,6 @@
 import { Card, Button } from 'react-bootstrap'
 
-export const Template = (props) => {
+export const IconTemplate = (props) => {
   return (
     <>
       <Card>

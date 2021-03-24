@@ -1,6 +1,6 @@
 import { Menu } from '../layout/Menu'
 import { Container, Row, Col, CardGroup } from 'react-bootstrap'
-import { Template } from '../exercise/Template'
+import { IconTemplate } from '../layout/IconTemplate'
 import '../../style/style.css'
 import '../../style/Home.css'
 import balance from '../../img/balance.png'
@@ -38,10 +38,10 @@ export const Home = () => {
         <Row className="justify-content-center">
           <Col md={12} className="text-center">
             <CardGroup>
-              <Template pic={balance} title="Balance"/>
-              <Template pic={endurance} title="Endurance"/>
-              <Template pic={flexibility} title="Flexibility"/>
-              <Template pic={strength} title="Strength"/>
+              <IconTemplate pic={balance} title="Balance"/>
+              <IconTemplate pic={endurance} title="Endurance"/>
+              <IconTemplate pic={flexibility} title="Flexibility"/>
+              <IconTemplate pic={strength} title="Strength"/>
             </CardGroup>          
           </Col>
         </Row>
