@@ -28,9 +28,14 @@ export const Signup = () => {
             </Form.Group>
             <Button variant="primary" href="/home">
               Sign up
+            </Button> { }
+            <Button variant="primary" href="/home">
+              Sign up with your Google account
+            </Button> { }
+            <Button variant="primary" href="/home">
+              Forgot password?
             </Button>
           </Form>
-          <h3>Include sign up w/ social media and forgot password features</h3>
         </Container>
         
           
