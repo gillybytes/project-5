@@ -30,7 +30,7 @@ export const Signup = () => {
               Sign up
             </Button> { }
             <Button variant="primary" href="/home">
-              Sign up with your Google account
+              Sign in with Google account
             </Button> { }
             <Button variant="primary" href="/home">
               Forgot password?
