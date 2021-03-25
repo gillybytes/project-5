@@ -84,7 +84,9 @@ export const TemplateEdit = (props) => {
             </tr>
           </tbody>
         </Table>
-      <Button variant="primary" href={props.path}>Save</Button>
+        <p>
+          <Button variant="primary" href={props.path}>Save</Button> { } <Button variant="primary" href={props.path}>Cancel</Button>
+        </p>
     </Form>
   </>
   )
