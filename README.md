@@ -26,5 +26,6 @@ Activafy will be delivered as a web-based application. It will be built using Ja
 2. Performance: The product must be optimized to provide a smooth user experience.
 3. Product lifetime: The architecture must be evolvable, so that it can be adapted to accommodate new features and technologies.
 
-### Diagram
-![Diagram](https://user-images.githubusercontent.com/78502763/112689497-c941e980-8e50-11eb-95d7-967867d4fcd0.png)
+### Architecture Diagram
+![Diagram](https://user-images.githubusercontent.com/78502763/112689887-42414100-8e51-11eb-8fba-290bfef65005.png)
+
