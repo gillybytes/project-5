@@ -2,8 +2,6 @@
 
 Activafy is a fitness application that keeps a log of the user's daily/weekly workout routine(s).
 
-Built using HTML, CSS, JavaScript, and React.
-
 Developed and supported by Jinxiang Lin, Gillian Pantaleon, Mark Mosarac, and Wei Chen
 
 Project Status: Prototype Extension
@@ -23,14 +21,10 @@ FOR athletes, hobbyists, and people who are getting started on their fitness jou
 ## Product Architecture
 
 ### Description
-Technologies Chosen:
-
-Activafy will be developed using React and delivered as a web application. It will use a relational SQL database, hosted through Amazon Web Services.
-
-Most Important Qualities:
-1) Software compatibility - The product must be compatible with all major digital calendars.
-2) Performance - The product must be optimized to provide a smooth user experience.
-3) Product lifetime - The architecture must be evolvable, so that it can be adapted to accommodate new features and digital calendars.
+Activafy will be delivered as a web-based application. It will be built using Javascript, primarily React, and a SQL database, which will be hosted through Amazon Web Services. We prioritize the following qualities:
+1. Software compatibility: The product must be compatible with all major digital calendars, e.g. Google, iCal, Outlook, etc.
+2. Performance: The product must be optimized to provide a smooth user experience.
+3. Product lifetime: The architecture must be evolvable, so that it can be adapted to accommodate new features and technologies.
 
 ### Diagram
 ![1](https://user-images.githubusercontent.com/33522721/112686845-fbe9e300-8e4c-11eb-80cb-15f483e794d1.png)
