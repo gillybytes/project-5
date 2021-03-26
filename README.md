@@ -21,10 +21,10 @@ FOR athletes, hobbyists, and people who are getting started on their fitness jou
 ## Product Architecture
 
 ### Description
-Activafy will be delivered as a web-based application. It will be built using Javascript, primarily React, and a SQL database, which will be hosted through Amazon Web Services. We prioritize the following qualities:
-1. Software compatibility: The product must be compatible with all major digital calendars, e.g. Google, iCal, Outlook, etc.
-2. Performance: The product must be optimized to provide a smooth user experience.
-3. Product lifetime: The architecture must be evolvable, so that it can be adapted to accommodate new features and technologies.
+Activafy will be delivered as a web-based application. It will be built using Javascript, primarily with React, and connect to a PostgreSQL database, which will be hosted on Amazon Web Services. We prioritize the following qualities for our software product:
+1. **Software compatibility**: Our differentiating factor from the competition is our synchronization feature. Therefore, our application must be compatible with the major digital calendars on the market, e.g. Google Calendar, iCal, Outlook, etc. We want our product to work seamlessly no matter which calendar the user chooses.
+2. **Performance**: Second, we prioritize a nonfunctional product characteristic, performance. Activafy must perform relatively well in order for it to be a commercial succerss. The product must be optimized using metrics such as response time, error and request rates, and availability to provide a smooth user experience.
+3. **Product lifetime**: Third, we anticpate maintaining our users in the long run. We will need to create regular product revisions, and therefore, need an evolvable architecture. It must be able to adapt and accommodate new features and technologies.
 
 ### Architecture Diagram
 ![Diagram](https://user-images.githubusercontent.com/78502763/112689887-42414100-8e51-11eb-8fba-290bfef65005.png)
