@@ -27,4 +27,4 @@ Activafy will be delivered as a web-based application. It will be built using Ja
 3. Product lifetime: The architecture must be evolvable, so that it can be adapted to accommodate new features and technologies.
 
 ### Diagram
-![1](https://user-images.githubusercontent.com/33522721/112686845-fbe9e300-8e4c-11eb-80cb-15f483e794d1.png)
+![Diagram](https://user-images.githubusercontent.com/78502763/112689497-c941e980-8e50-11eb-95d7-967867d4fcd0.png)
