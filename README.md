@@ -24,6 +24,7 @@ FOR athletes, hobbyists, and people who are getting started on their fitness jou
 
 ### Description
 Technologies Chosen:
+
 Activafy will be developed using React and delivered as a web application. It will use a relational SQL database, hosted through Amazon Web Services.
 
 Most Important Qualities:
