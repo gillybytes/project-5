@@ -18,3 +18,12 @@ FOR athletes, hobbyists, and people who are getting started on their fitness jou
 2. Open the concept-prototype folder.
 3. Open *login.html* in the browser of your choice.
 4. Click the **Login** button to be brought to the homepage and view other features of the application.
+
+
+## Product Architecture
+
+### Description
+Describe important qualities, architecture, technologies, etc. 
+
+### Diagram
+Insert image of design diagram
