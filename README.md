@@ -31,6 +31,9 @@ Activafy will be delivered as a web-based application. It will be built using Ja
 
 ### Technologies Used
 Database: PostgreSQL database
+
 Platform: Mobile app and web platform
+
 Server: Amazon Web Services
+
 Open source: ExRx.net Exercise API
