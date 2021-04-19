@@ -29,3 +29,8 @@ Activafy will be delivered as a web-based application. It will be built using Ja
 ### Architecture Diagram
 ![Diagram](https://user-images.githubusercontent.com/78502763/112689887-42414100-8e51-11eb-8fba-290bfef65005.png)
 
+### Technologies Used
+Database: PostgreSQL database
+Platform: Mobile app and web platform
+Server: Amazon Web Services
+Open source: ExRx.net Exercise API
