@@ -1,5 +1,5 @@
 # Pull official base image
-FROM activafy:dev
+FROM node:13.12.0-alpine
 
 # Set working directory
 WORKDIR /app
@@ -8,8 +8,8 @@ WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
 
 # Install app dependencies
-COPY package.json ./
-COPY package-lock.json ./
+COPY package.json .././
+COPY package-lock.json .././
 RUN npm install
 
 # Add app
