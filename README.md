@@ -43,4 +43,4 @@ To run the docker image, execute the following:
   docker pull jinxlll/group5
   docker run -it --rm -v ${PWD}:/app -v /app/node_modules -p 3000:3000 jinxlll/group5
 ```
-Then open your browser to: http://localhost:3001/
+Then open your browser to: http://localhost:3000/
