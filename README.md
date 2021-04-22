@@ -38,5 +38,8 @@ Activafy will be delivered as a web-based application. It will be built using Ja
 * Server: Amazon Web Services
 
 ## Docker
-* docker pull jinxlll/group5
-* docker run jinxlll/group5
+Instructions on how to run the docker image:
+```
+  docker pull jinxlll/group5
+  docker run jinxlll/group5
+```
