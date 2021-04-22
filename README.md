@@ -36,3 +36,7 @@ Activafy will be delivered as a web-based application. It will be built using Ja
 * Backend: Express & Node.js
 * Database: PostgreSQL
 * Server: Amazon Web Services
+
+## Docker
+* docker pull jinxlll/group5
+* docker run jinxlll/group5
