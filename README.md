@@ -38,8 +38,9 @@ Activafy will be delivered as a web-based application. It will be built using Ja
 * Server: Amazon Web Services
 
 ## Docker
-Instructions on how to run the docker image:
+To run the docker image, execute the following:
 ```
   docker pull jinxlll/group5
-  docker run jinxlll/group5
+  docker run -it --rm -v ${PWD}:/app -v /app/node_modules -p 3001:3000 jinxlll/group5
 ```
+Then open your browser to: http://localhost:3001/
