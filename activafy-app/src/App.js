@@ -1,8 +1,9 @@
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
-import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+
 import { Home } from './components/pages/Home'
-import { Login} from './components/pages/auth/Login'
-import { Signup } from './components/pages/auth/Signup'
+
+import Login from './components/pages/auth/Login'
+import Signup from './components/pages/auth/Signup'
 import { Balance } from './components/pages/Balance'
 import { BalanceEdit } from './components/pages/Balance-edit'
 import { Endurance } from './components/pages/Endurance'
@@ -13,52 +14,46 @@ import { Strength } from './components/pages/Strength'
 import { StrengthEdit } from './components/pages/Strength-edit'
 import { Settings } from './components/pages/Settings'
 import { Stats } from './components/exercise/Stats'
-import { toast } from 'react-toastify';
 
-toast.configure();
+import { Provider } from "react-redux";
+import store from "./store";
 
-const App = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+import jwt_decode from "jwt-decode";
+import setAuthToken from "./utils/setAuthToken";
+import { setCurrentUser, logoutUser } from "./actions/authAction";
+import PrivateRoute from "./components/private-route/PrivateRoute";
+import { Component } from 'react'
 
-  const setAuth = boolean => {
-    setIsAuthenticated(boolean);
-  };
+if(localStorage.jwtToken){
+  const token = localStorage.jwtToken;
+  setAuthToken(token);
+  const decoded = jwt_decode(token);
+  store.dispatch(setCurrentUser(decoded));
 
-  async function isAuth() {
-    try {
-      const response = await fetch('http://localhost:5000/auth/verified', {
-        method: 'POST',
-        headers: { token: localStorage.token}
-      });
-      
-      const parseRes = await response.json();
+  // Check for expired token
+const currentTime = Date.now() / 1000; // to get in milliseconds
+if (decoded.exp < currentTime) {
+  // Logout user
+  store.dispatch(logoutUser());
+  // Redirect to login
+  window.location.href = "/";
+  }
+}
 
-      console.log(parseRes);
-      parseRes === true ? setIsAuthenticated(true) : setIsAuthenticated(false);
-    } 
-      catch (err) {
-      console.error(err.message); 
-    }
-  };
 
-  useEffect(() => {
-    isAuth();
-  });
 
+
+class App extends Component {
+  render() {
   return (
+    <Provider store={store}>
     <Router>
       <div className="App">
         <Switch>
+          <Route exact path='/' component={Login} />
           <Route exact path='/home' component={Home} />
           <Route exact path='/signup' component={Signup} />
-          <Route exact path='/' 
-            render={props => !isAuthenticated ? (
-              <Login {...props} setAuth={setAuth}/>
-            ) : (
-              <Redirect to = "/home" />
-            )
-            }
-          />
+          
           <Route exact path='/settings' component={Settings}/>
           <Route exact path='/stats' component={Stats}/>
           <Route exact path='/balance' component={Balance} />
@@ -72,8 +67,9 @@ const App = () => {
         </Switch>
       </div>
     </Router>
-    
+    </Provider>
   );
+  }
 }
 
 export default App;

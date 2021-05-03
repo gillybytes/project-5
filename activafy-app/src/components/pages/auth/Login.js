@@ -1,89 +1,126 @@
 import { Menu } from '../../layout/Menu'
 import { Container, Form, Button } from 'react-bootstrap'
-import React, { useState } from 'react';
+import React, { Component } from 'react';
 
-import { toast } from "react-toastify";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { loginUser } from "../../../actions/authAction";
+import classnames from "classnames";
 
-export const Login = ({ setAuth }) => {
+const nav = [
+  {
+    id: 1,
+    link: "/signup",
+    label: "Sign up"
+  }
+]
 
-    const [inputs, setInputs] = useState({
-      email: "",
-      password: "",
-    });
-
-    const {email, password} = inputs;
-
-    const onChange = e => {
-      setInputs({...inputs, [e.target.name]: e.target.value});
-
-    }; 
-
-    const onSubmitForm = async(e) => {
-      e.preventDefault();
-      try {
-          const body = {email, password};
-          const response = await fetch("http://localhost:5000/auth/login1",
-              {
-                  method: "POST",
-                  headers: {"Content-Type": "application/json"},
-                  body: JSON.stringify(body)
-              }
-          );
-              const parseRes = await response.json();
-
-              if(parseRes.token) {
-                  localStorage.setItem('token', parseRes.token);
-                  setAuth(true);
-                  toast.success(`Welcome Back, ${parseRes.name.charAt(0).toUpperCase()}${parseRes.name.substring(1,)}!`)
-              } else {
-                  setAuth(false);
-                  toast.error(parseRes);
-              }
-            
-      } catch (err) {
-          console.error(err.message);
+class Login extends Component {
+    constructor() {
+      super();
+      this.state = {
+        email: "",
+        password: "",
+        errors: {}
+      };
+    }
+    componentWillReceiveProps(nextProps) {
+      if (nextProps.auth.isAuthenticated) {
+        this.props.history.push("/home");
       }
-    };
-    
-    const nav = [
-        {
-          id: 1,
-          link: "/signup",
-          label: "Sign up"
-        }
-      ]
-    
-    return(
-        <>
-        <Menu nav={nav} link="/" />
-        <Container className="section">
-          <Form onSubmit={onSubmitForm}>
-            <Form.Group controlId="fromBasicUsername">
-              <Form.Label>Email</Form.Label>
-              <Form.Control 
-                type="email"
-                name="email" 
-                placeholder="Enter email"
-                value={email}
-                onChange={e => onChange(e)}
-                />
-            </Form.Group>
+  if (nextProps.errors) {
+        this.setState({
+          errors: nextProps.errors
+        });
+      }
+    }
 
-            <Form.Group controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
-              <Form.Control 
-                name="password"
-                type="password" 
-                placeholder="Enter password" 
-                value={password}
-                onChange={e => onChange(e)}
-                />
-            </Form.Group>
-            <Button className="btn btn-success btn-block">
-              Login
-            </Button>
-          </Form>
-        </Container>
-        </>
+    onChange = e => {
+      this.setState({ [e.target.id]: e.target.value });
+    }
+    onSubmit = e => {
+      e.preventDefault();
+
+      const userData = {
+        email: this.state.email,
+        password: this.state.password
+      };
+      this.props.loginUser(userData);
+    };
+
+    render(){
+      const {errors} = this.state;
+    return(
+      <>
+      <Menu nav={nav} link="/" />
+
+      <Container className="section">
+        <Form onSubmit={this.onSubmit}> 
+          <Form.Group controlId="fromBasicUsername">
+            <Form.Label>Email</Form.Label>
+            <br/>
+            <div>
+            <input
+              placeholder="Enter email"
+              onChange={this.onChange}
+              value={this.state.email}
+              error={errors.email}
+              id="email"
+              type="email"
+              className={classnames("", {
+                invalid: errors.email || errors.emailnotfound
+              })}
+            />
+            <span className="red-text">
+                  {errors.email}
+                  {errors.emailnotfound}
+            </span>
+            </div>
+          </Form.Group>
+          <Form.Group controlId="formBasicPassword">
+            <Form.Label>Password</Form.Label>
+            <br/>
+            <div>
+            <input
+              placeholder="Enter password"
+              onChange={this.onChange}
+              value={this.state.password}
+              error={errors.password}
+              id="password"
+              type="password"
+              className={classnames("", {
+                invalid: errors.password || errors.passwordincorrect
+              })}
+            />
+            <span className="red-text">
+                  {errors.password}
+                  {errors.passwordincorrect}
+            </span>
+            </div>
+          </Form.Group>
+          <Button 
+            type="submit"
+            className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+          >
+            Login
+          </Button>
+        </Form>
+      </Container>
+      </> 
     )
-}
+    }
+};
+
+Login.propTypes = {
+  loginUser: PropTypes.func.isRequired,
+  auth: PropTypes.object.isRequired,
+  errors: PropTypes.object.isRequired
+};
+const mapStateToProps = state => ({
+  auth: state.auth,
+  errors: state.errors
+});
+export default connect(
+  mapStateToProps,
+  { loginUser }
+)(Login);
