@@ -5,7 +5,7 @@ import { GET_ERRORS, SET_CURRENT_USER, USER_LOADING } from "./types";
 // Register User
 export const registerUser = (userData, history) => dispatch => {
   axios
-    .post("api/users/signup", userData)
+    .post("http://localhost:5000/api/users/signup", userData)
     .then(res => history.push("/"))
     .catch(err =>
       dispatch({
@@ -16,8 +16,8 @@ export const registerUser = (userData, history) => dispatch => {
 };
 
 export const loginUser = userData => dispatch => {
-  axios//"/api/users/login"
-    .post("api/users/login", userData)
+  axios
+    .post("http://localhost:5000/api/users/login", userData)
     .then(res => {
 
       const { token } = res.data;

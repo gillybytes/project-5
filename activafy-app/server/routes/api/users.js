@@ -36,7 +36,7 @@ router.post("/signup", (req, res) => {
     });
 });
 
-router.post("/", (req, res) => {
+router.post("/login", (req, res) => {
     // Form validation
   
     const { errors, isValid } = validateLoginInput(req.body);

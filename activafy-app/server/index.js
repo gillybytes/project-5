@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const passport = require("passport");
 const users = require("./routes/api/users");
-
+const cors = require("cors");
 const app = express();
 
 app.use(
@@ -14,7 +14,10 @@ app.use(
 
 app.use(bodyParser.json());
 const db = require("./config/keys").mongoURI;
-
+app.use(cors({
+    origin: ["http://localhost:3000"],
+    credentials: true //allow the broswer to set cookie if origin is localhost3000
+}));
 mongoose.connect(
     db,
     { 
@@ -27,8 +30,9 @@ mongoose.connect(
 
 app.use(passport.initialize());
 require("./config/passport")(passport);
-app.use("api/users", users);
+app.use("/api/users", users);
 
 const port = process.env.PORT || 5000;
+
 
 app.listen( port, ()=> console.log(`server is running on port ${port}.`));
