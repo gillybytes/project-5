@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
 
-module.exports = connectDataBase = asynch() => {
+module.exports = connectDataBase = async() => {
   try {
     const databaseConnection = await mongoose.connect(process.env.DB, {
       useUnifiedTopology: true,
