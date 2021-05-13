@@ -70,28 +70,28 @@ functions:
     handler: handler.getOne
     events:
       - http: 
-          path: notes/{id}
+          path: users/{id}
           method: get
           cors: true
   getAll:
     handler: handler.getAll
     events:
       - http: 
-          path: notes
+          path: users
           method: get
           cors: true
   update:
     handler: handler.update
     events:
       - http: 
-          path: notes/{id}
+          path: users/{id}
           method: put
           cors: true
   delete:
     handler: handler.delete
     events:
       - http: 
-          path: notes/{id}
+          path: users/{id}
           method: delete
           cors: true
 
