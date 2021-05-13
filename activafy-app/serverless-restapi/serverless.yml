@@ -63,7 +63,7 @@ functions:
     handler: handler.create
     events:
       - http:
-          path: users
+          path: users/login
           method: post
           cors: true
   getOne:
