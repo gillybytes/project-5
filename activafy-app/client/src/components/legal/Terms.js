@@ -55,7 +55,7 @@ const Terms = () => {
                 <li>Miscellaneous</li>
                 <li>Contact Us</li>
               </ol>
-              <h6><em>Last updated November 21, 2020.</em></h6>
+              <h6><em>Last updated May 19, 2021.</em></h6>
             </h6>
             <br />
           </Col>
