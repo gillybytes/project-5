@@ -4,7 +4,7 @@ import AuthContext from '../../context/auth/authContext';
 import isAuthenticatedUser from '../../utils/isAuthenticated';
 
 import { Menu } from '../layout/Menu';
-import '../style/Auth.css';
+import '../style/style.css';
 
 
 

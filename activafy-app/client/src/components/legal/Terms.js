@@ -6,7 +6,6 @@ import '../style/Legal.css';
 import '../style/style.css';
 
 
-
 const Terms = () => {
   const nav = [
     {
