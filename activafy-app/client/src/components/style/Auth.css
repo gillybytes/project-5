@@ -1,0 +1,36 @@
+/*Styling for Login & Sign Up */
+
+body {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5),
+      rgba(234, 239, 244, 0.1)
+    ),
+    url(../../img/weightlifters.jpg);
+  background-size: cover;
+  position: relative;
+}
+.wrapper {
+  background: transparent;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1140px;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#login {
+  padding: 10rem 0;
+}
+
+#signup {
+  padding-top: 7rem;
+}
+.signup p {
+  margin-bottom: 0;
+}
