@@ -74,31 +74,31 @@
     "CreateLogGroup": {
       "Type": "AWS::Logs::LogGroup",
       "Properties": {
-        "LogGroupName": "/aws/lambda/serverless-restapi-undefined-create"
+        "LogGroupName": "/aws/lambda/serverless-restapi-dev-create"
       }
     },
     "GetOneLogGroup": {
       "Type": "AWS::Logs::LogGroup",
       "Properties": {
-        "LogGroupName": "/aws/lambda/serverless-restapi-undefined-getOne"
+        "LogGroupName": "/aws/lambda/serverless-restapi-dev-getOne"
       }
     },
     "GetAllLogGroup": {
       "Type": "AWS::Logs::LogGroup",
       "Properties": {
-        "LogGroupName": "/aws/lambda/serverless-restapi-undefined-getAll"
+        "LogGroupName": "/aws/lambda/serverless-restapi-dev-getAll"
       }
     },
     "UpdateLogGroup": {
       "Type": "AWS::Logs::LogGroup",
       "Properties": {
-        "LogGroupName": "/aws/lambda/serverless-restapi-undefined-update"
+        "LogGroupName": "/aws/lambda/serverless-restapi-dev-update"
       }
     },
     "DeleteLogGroup": {
       "Type": "AWS::Logs::LogGroup",
       "Properties": {
-        "LogGroupName": "/aws/lambda/serverless-restapi-undefined-delete"
+        "LogGroupName": "/aws/lambda/serverless-restapi-dev-delete"
       }
     },
     "IamRoleLambdaExecution": {
@@ -143,19 +143,7 @@
                   ],
                   "Resource": [
                     {
-                      "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/serverless-restapi-undefined-create:*"
-                    },
-                    {
-                      "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/serverless-restapi-undefined-getOne:*"
-                    },
-                    {
-                      "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/serverless-restapi-undefined-getAll:*"
-                    },
-                    {
-                      "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/serverless-restapi-undefined-update:*"
-                    },
-                    {
-                      "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/serverless-restapi-undefined-delete:*"
+                      "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/serverless-restapi-dev*:*"
                     }
                   ]
                 },
@@ -166,19 +154,7 @@
                   ],
                   "Resource": [
                     {
-                      "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/serverless-restapi-undefined-create:*:*"
-                    },
-                    {
-                      "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/serverless-restapi-undefined-getOne:*:*"
-                    },
-                    {
-                      "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/serverless-restapi-undefined-getAll:*:*"
-                    },
-                    {
-                      "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/serverless-restapi-undefined-update:*:*"
-                    },
-                    {
-                      "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/serverless-restapi-undefined-delete:*:*"
+                      "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/serverless-restapi-dev*:*:*"
                     }
                   ]
                 }
@@ -209,11 +185,11 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless-restapi/dev/1620870970889-2021-05-13T01:56:10.889Z/serverless-restapi.zip"
+          "S3Key": "serverless/serverless-restapi/dev/1620871784113-2021-05-13T02:09:44.113Z/serverless-restapi.zip"
         },
         "Handler": "handler.create",
         "Runtime": "nodejs14.x",
-        "FunctionName": "serverless-restapi-undefined-create",
+        "FunctionName": "serverless-restapi-dev-create",
         "MemorySize": 1024,
         "Timeout": 6,
         "Role": {
@@ -234,11 +210,11 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless-restapi/dev/1620870970889-2021-05-13T01:56:10.889Z/serverless-restapi.zip"
+          "S3Key": "serverless/serverless-restapi/dev/1620871784113-2021-05-13T02:09:44.113Z/serverless-restapi.zip"
         },
         "Handler": "handler.getOne",
         "Runtime": "nodejs14.x",
-        "FunctionName": "serverless-restapi-undefined-getOne",
+        "FunctionName": "serverless-restapi-dev-getOne",
         "MemorySize": 1024,
         "Timeout": 6,
         "Role": {
@@ -259,11 +235,11 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless-restapi/dev/1620870970889-2021-05-13T01:56:10.889Z/serverless-restapi.zip"
+          "S3Key": "serverless/serverless-restapi/dev/1620871784113-2021-05-13T02:09:44.113Z/serverless-restapi.zip"
         },
         "Handler": "handler.getAll",
         "Runtime": "nodejs14.x",
-        "FunctionName": "serverless-restapi-undefined-getAll",
+        "FunctionName": "serverless-restapi-dev-getAll",
         "MemorySize": 1024,
         "Timeout": 6,
         "Role": {
@@ -284,11 +260,11 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless-restapi/dev/1620870970889-2021-05-13T01:56:10.889Z/serverless-restapi.zip"
+          "S3Key": "serverless/serverless-restapi/dev/1620871784113-2021-05-13T02:09:44.113Z/serverless-restapi.zip"
         },
         "Handler": "handler.update",
         "Runtime": "nodejs14.x",
-        "FunctionName": "serverless-restapi-undefined-update",
+        "FunctionName": "serverless-restapi-dev-update",
         "MemorySize": 1024,
         "Timeout": 6,
         "Role": {
@@ -309,11 +285,11 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless-restapi/dev/1620870970889-2021-05-13T01:56:10.889Z/serverless-restapi.zip"
+          "S3Key": "serverless/serverless-restapi/dev/1620871784113-2021-05-13T02:09:44.113Z/serverless-restapi.zip"
         },
         "Handler": "handler.delete",
         "Runtime": "nodejs14.x",
-        "FunctionName": "serverless-restapi-undefined-delete",
+        "FunctionName": "serverless-restapi-dev-delete",
         "MemorySize": 1024,
         "Timeout": 6,
         "Role": {
@@ -327,54 +303,54 @@
         "DeleteLogGroup"
       ]
     },
-    "CreateLambdaVersionvZeP0ndV9rfzGwaDjYtaA850hSXqlgOZhjJ6KzG9Y": {
+    "CreateLambdaVersionJEi7JLww6PGV3YKoCu9l7mzCL2oAlDjXoH0sSFJ8k0Y": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "CreateLambdaFunction"
         },
-        "CodeSha256": "OiYB6Rek1Rys66TsKgBVZ1sDo8U666hrgA2nvvNQq4k="
+        "CodeSha256": "PrXD9eZdJen4NyN5dmyjv1990fShOe0f5MFGYDAFK+U="
       }
     },
-    "GetOneLambdaVersionQ4C0kAQ9s0iPQdrqENRka9Toj2js4QbLQRaEZuxQ6Y": {
+    "GetOneLambdaVersionk6xv2x8eH4xlgiG0CfFtjjKeB2b9EIiZJb88dMKD5Y": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetOneLambdaFunction"
         },
-        "CodeSha256": "OiYB6Rek1Rys66TsKgBVZ1sDo8U666hrgA2nvvNQq4k="
+        "CodeSha256": "PrXD9eZdJen4NyN5dmyjv1990fShOe0f5MFGYDAFK+U="
       }
     },
-    "GetAllLambdaVersionNUAIJs1FZg82DBCBzDeaGcSCzBminZ6n5GwwlDIz9Dk": {
+    "GetAllLambdaVersionnbFvvGEDIX1H2eEEJArpISInH44ZCmKKaP8UjaHEjYk": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetAllLambdaFunction"
         },
-        "CodeSha256": "OiYB6Rek1Rys66TsKgBVZ1sDo8U666hrgA2nvvNQq4k="
+        "CodeSha256": "PrXD9eZdJen4NyN5dmyjv1990fShOe0f5MFGYDAFK+U="
       }
     },
-    "UpdateLambdaVersionbypL2nqhyeMYHxtQcDO5V2SzJx6asO97OcmY9llpnW0": {
+    "UpdateLambdaVersionqFRutmGenQNtUm5u0PeBlqmAhNHtjASGw2wZX9IZg": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "UpdateLambdaFunction"
         },
-        "CodeSha256": "OiYB6Rek1Rys66TsKgBVZ1sDo8U666hrgA2nvvNQq4k="
+        "CodeSha256": "PrXD9eZdJen4NyN5dmyjv1990fShOe0f5MFGYDAFK+U="
       }
     },
-    "DeleteLambdaVersionQE4HP91ZTZzC1CyqI50zTZaIzR3InMo659JdRv6g9GU": {
+    "DeleteLambdaVersionEkbKE0FB30gftyiwAVnn9AHJYq5rGqSyVvFRzmPKVyU": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DeleteLambdaFunction"
         },
-        "CodeSha256": "OiYB6Rek1Rys66TsKgBVZ1sDo8U666hrgA2nvvNQq4k="
+        "CodeSha256": "PrXD9eZdJen4NyN5dmyjv1990fShOe0f5MFGYDAFK+U="
       }
     },
     "ApiGatewayRestApi": {
@@ -721,7 +697,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1620870968431": {
+    "ApiGatewayDeployment1620871781682": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -937,7 +913,7 @@
     "CreateLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "CreateLambdaVersionvZeP0ndV9rfzGwaDjYtaA850hSXqlgOZhjJ6KzG9Y"
+        "Ref": "CreateLambdaVersionJEi7JLww6PGV3YKoCu9l7mzCL2oAlDjXoH0sSFJ8k0Y"
       },
       "Export": {
         "Name": "sls-serverless-restapi-dev-CreateLambdaFunctionQualifiedArn"
@@ -946,7 +922,7 @@
     "GetOneLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetOneLambdaVersionQ4C0kAQ9s0iPQdrqENRka9Toj2js4QbLQRaEZuxQ6Y"
+        "Ref": "GetOneLambdaVersionk6xv2x8eH4xlgiG0CfFtjjKeB2b9EIiZJb88dMKD5Y"
       },
       "Export": {
         "Name": "sls-serverless-restapi-dev-GetOneLambdaFunctionQualifiedArn"
@@ -955,7 +931,7 @@
     "GetAllLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetAllLambdaVersionNUAIJs1FZg82DBCBzDeaGcSCzBminZ6n5GwwlDIz9Dk"
+        "Ref": "GetAllLambdaVersionnbFvvGEDIX1H2eEEJArpISInH44ZCmKKaP8UjaHEjYk"
       },
       "Export": {
         "Name": "sls-serverless-restapi-dev-GetAllLambdaFunctionQualifiedArn"
@@ -964,7 +940,7 @@
     "UpdateLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "UpdateLambdaVersionbypL2nqhyeMYHxtQcDO5V2SzJx6asO97OcmY9llpnW0"
+        "Ref": "UpdateLambdaVersionqFRutmGenQNtUm5u0PeBlqmAhNHtjASGw2wZX9IZg"
       },
       "Export": {
         "Name": "sls-serverless-restapi-dev-UpdateLambdaFunctionQualifiedArn"
@@ -973,7 +949,7 @@
     "DeleteLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DeleteLambdaVersionQE4HP91ZTZzC1CyqI50zTZaIzR3InMo659JdRv6g9GU"
+        "Ref": "DeleteLambdaVersionEkbKE0FB30gftyiwAVnn9AHJYq5rGqSyVvFRzmPKVyU"
       },
       "Export": {
         "Name": "sls-serverless-restapi-dev-DeleteLambdaFunctionQualifiedArn"
