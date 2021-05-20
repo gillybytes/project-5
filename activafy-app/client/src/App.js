@@ -5,6 +5,7 @@ import Signup from './components/auth/Signup';
 import Home from './components/dashboard/Home';
 import AuthState from './context/auth/authSate';
 import setAuthToken from './utils/setAuthToken';
+import Terms from './components/legal/Terms';
 // import { Balance } from './components/pages/Balance'
 // import { BalanceEdit } from './components/pages/Balance-edit'
 // import { Endurance } from './components/pages/Endurance'
@@ -28,7 +29,7 @@ const App = () => {
             <Route exact path='/' component={Login} />
             <Route path='/home' component={Home} />
             <Route path='/signup' component={Signup} />
-            
+            <Route path='/terms' component={Terms} />
             {/* <Route exact path='/settings' component={Settings}/>
             <Route exact path='/stats' component={Stats}/>
             <Route exact path='/balance' component={Balance} />

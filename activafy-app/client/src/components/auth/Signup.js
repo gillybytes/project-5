@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react';
-import { Container, Col, Form, Button, Modal } from 'react-bootstrap'
+import { Container, Col, Form, Button, Modal } from 'react-bootstrap';
 import AuthContext from '../../context/auth/authContext';
 import isAuthenticatedUser from '../../utils/isAuthenticated';
 
@@ -14,7 +14,7 @@ const Signup = props => {
   
   useEffect(() => {
     if(isAuthenticated || isAuthenticatedUser()) {
-      //props.history.push('/home');
+      //props.history.push('/home');   // FIX THIS: check context
     }
 
     if(error === 'User already exists') {
